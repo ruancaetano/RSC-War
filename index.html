@@ -1,0 +1,56 @@
+<DOCTYPE html>
+  <html>
+
+  <head>
+    <title>RSC War</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css"></link>
+  </head>
+
+  <body>
+
+    <!-- Nome do Jogo -->
+    <header>
+      <h1>RSC WAR</h1>
+    </header>
+
+    <!-- Pontuação e menu-->
+    <aside >
+        <button id="btIniciar">
+          <img src="img/sabre.png" alt="" width="30px">
+          Iniciar Jogo
+          </button>
+        <div id="score">
+          <h2 id="pontuacao">Pontuação: 0</h2>
+          <h2 id="vidas">Vidas: 3</h2>
+        </div>
+       
+    </aside>
+    <!-- Área de jogo -->
+    <main>
+      <canvas id="canvas"></canvas>
+    </main>
+
+
+
+
+
+    <script src="js/engine.js"></script>
+    <script src="js/nave.js"></script>
+    <script src="js/arma.js"></script>
+    <script src="js/meteoro.js"></script>
+    <script>
+      document.getElementById("btIniciar").addEventListener("click",function(){
+        RSC.main();
+        document.getElementById("btIniciar").blur();
+        document.getElementById("btIniciar").disabled = true;
+        document.getElementById("btIniciar").innerHTML = '<img src="img/sabre.png" alt="" width="30px">Iniciado';
+        document.getElementById("canvas").style.display = 'block';
+        document.getElementById("score").style.display = 'block';
+        document.getElementById("canvas").focus();
+
+      })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {
+    font-family:"STARWARS";
+    src: url("../fonts/STARWARS.eot?") format("eot"),
+    url("../fonts/STARWARS.woff") format("woff"),
+    url("../fonts/STARWARS.ttf") format("truetype"),
+    url("../fonts/STARWARS.svg#STARWARS") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+/* Estilização do header */
+header {
+    margin: 50px 0 30px 15px;
+}
+
+/* Estilização do canvas */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    background: url('../img/fundo_jogo.gif');
+    display: none;
+    border: 10px solid #161616;
+}
+
+
+/* Estilização do body */
+body{
+    background: url('../img/fundo_geral.jpg');
+    background-size: cover;
+    color: #7c7e7d;
+}
+
+/* Estilização dos títulos */
+h1,h2{
+    font-family:"STARWARS";
+    letter-spacing: 5px;
+}
+
+/* Estilização do score e menu */
+#score{
+    display: none;
+    margin: 25px 15px;
+}
+
+button, button:disabled{
+    display: block;
+    margin: 10px 15px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #7c7e7d;
+    border: 3px solid #212524;
+    color: #d8d8d8;
+    text-align: center;
+}
+
+button img{
+    margin-bottom: 2px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
